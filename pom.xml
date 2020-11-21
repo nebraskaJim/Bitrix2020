@@ -50,8 +50,8 @@
                 <version>3.0.0-M5</version>
                 <configuration>
                     <includes>
-                        <include>**/*CukesRunner.java</include>
-                        <include>**/*FailedTestRunner.java</include>
+                        <include>**/CukesRunner.java</include>
+                        <include>**/FailedTestRunner.java</include>
                     </includes>
                     <testFailureIgnore>false</testFailureIgnore>
                     <parallel>classes</parallel>
