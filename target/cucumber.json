@@ -1,0 +1,170 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1022000000,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User is on the landing page",
+            "match": {
+              "location": "com.bitrix.step_definitions.Activity_StepDefinition.user_is_on_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2836000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User logs in as \"hr\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"hr\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.bitrix.step_definitions.Activity_StepDefinition.userLogsInAs(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 257000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User clicks on \"Message\" tab",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Message\"",
+                  "offset": 15
+                }
+              ],
+              "location": "com.bitrix.step_definitions.Activity_StepDefinition.userClicksOnTab(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-21T21:56:50.528Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4891000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.bitrix.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 43,
+        "name": "User should be able to create a quote by clicking on the Comma icon",
+        "description": "",
+        "id": "as-a-user--i-should-be-able-to-send-messages-by-clicking-on-message-tab-under-activity-stream;user-should-be-able-to-create-a-quote-by-clicking-on-the-comma-icon",
+        "after": [
+          {
+            "result": {
+              "duration": 5342000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.bitrix.step_definitions.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2132000000,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "User clicks on Comma icon",
+            "match": {
+              "location": "com.bitrix.step_definitions.Activity_StepDefinition.userClicksOnCommaIcon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1200000000,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "User passes following quote",
+            "match": {
+              "location": "com.bitrix.step_definitions.Activity_StepDefinition.userPassesFollowingQuote(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Quote",
+                  "Impossible is nothing"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2090000000,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "User clicks on send button to share",
+            "match": {
+              "location": "com.bitrix.step_definitions.Activity_StepDefinition.userClicksOnSendButtonToShare()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3041000000,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "Quote should be displayed on the main stream",
+            "match": {
+              "location": "com.bitrix.step_definitions.Activity_StepDefinition.quoteShouldBeDisplayedOnTheMainStream()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@activity"
+          },
+          {
+            "name": "@quote"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "As a user, I should be able to send messages by clicking on Message tab under Activity Stream",
+    "description": "",
+    "id": "as-a-user--i-should-be-able-to-send-messages-by-clicking-on-message-tab-under-activity-stream",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/UserStory1/AC1_Message.feature",
+    "tags": []
+  }
+]

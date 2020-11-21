@@ -1,0 +1,10 @@
+com/bitrix/pages/ActivityStream.class
+com/bitrix/Utilities/ConfigurationReader.class
+com/bitrix/step_definitions/Hooks.class
+com/bitrix/Runners/CukesRunner.class
+com/bitrix/pages/BasePage.class
+com/bitrix/Utilities/Driver.class
+com/bitrix/Utilities/BrowserUtils.class
+com/bitrix/Runners/FailedTestRunner.class
+com/bitrix/step_definitions/Activity_StepDefinition.class
+com/bitrix/pages/LoginPage.class
