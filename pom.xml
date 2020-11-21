@@ -51,7 +51,9 @@
                 <configuration>
                     <includes>
                         <include>**/*CukesRunner.java</include>
+                        <include>**/*FailedTestRunner.java</include>
                     </includes>
+                    <testFailureIgnore>false</testFailureIgnore>
                     <parallel>classes</parallel>
                     <threadCount>4</threadCount>
                     <forkCount>2C</forkCount>
