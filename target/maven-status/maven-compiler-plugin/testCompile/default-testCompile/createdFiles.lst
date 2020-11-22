@@ -1,9 +1,9 @@
 com/bitrix/step_definitions/Hooks.class
+com/bitrix/Runners/RegressionRunner.class
 com/bitrix/Utilities/BrowserUtils.class
 com/bitrix/Runners/FailedTestRunner.class
 com/bitrix/pages/LoginPage.class
 com/bitrix/pages/ActivityStream.class
-com/bitrix/Runners/CukesRunner2.class
 com/bitrix/Utilities/ConfigurationReader.class
 com/bitrix/Runners/CukesRunner.class
 com/bitrix/pages/BasePage.class

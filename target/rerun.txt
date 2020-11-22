@@ -1,3 +1,0 @@
-file:src/test/resources/features/UserStory1/AC1_Message3.feature:16
-file:src/test/resources/features/UserStory1/AC1_Message.feature:16
-file:src/test/resources/features/UserStory1/AC1_Message4.feature:16
