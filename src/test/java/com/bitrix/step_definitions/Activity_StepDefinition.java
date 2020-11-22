@@ -61,7 +61,9 @@ public class Activity_StepDefinition {
 
     @And("User uploads following file:")
     public void userUploadsFollowingFile(Map<String, String> dataTable) {
-        activityStream.uploadFilesAndImages.sendKeys(dataTable.get("File Path"));
+        String path =System.getProperty("user.dir") + "/" + dataTable.get("File Path").replace("/", File.separator);
+        path = path.replace("/", File.separator);
+        activityStream.uploadFilesAndImages.sendKeys(path);
         BrowserUtils.waitForSecond(2);
         activityStream.setSendButton();
 

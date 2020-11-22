@@ -9,7 +9,7 @@ Feature: As a user, I should be able to send messages by clicking on Message tab
 
     When User clicks on "Upload files" icon
     And User uploads following file:
-    |File Path|/Users/emre/Desktop/Bitrix2020/src/test/resources/testData/Sample.jpeg|
+    |File Path|src/test/resources/testData/Sample.jpeg|
     And User clicks on select document from Bitrix
     And User downloads from external drive
   @contact @activity @smoke

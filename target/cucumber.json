@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1022000000,
+              "duration": 1201000000,
               "status": "passed"
             },
             "line": 3,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 2836000000,
+              "duration": 2890000000,
               "status": "passed"
             },
             "line": 4,
@@ -41,7 +41,7 @@
           },
           {
             "result": {
-              "duration": 257000000,
+              "duration": 211000000,
               "status": "passed"
             },
             "line": 5,
@@ -60,11 +60,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-21T21:56:50.528Z",
+        "start_timestamp": "2020-11-22T00:13:04.257Z",
         "before": [
           {
             "result": {
-              "duration": 4891000000,
+              "duration": 2878000000,
               "status": "passed"
             },
             "match": {
@@ -72,14 +72,14 @@
             }
           }
         ],
-        "line": 43,
-        "name": "User should be able to create a quote by clicking on the Comma icon",
-        "description": "",
-        "id": "as-a-user--i-should-be-able-to-send-messages-by-clicking-on-message-tab-under-activity-stream;user-should-be-able-to-create-a-quote-by-clicking-on-the-comma-icon",
+        "line": 7,
+        "name": "User should be able to click on upload files icon to upload files and pictures from local disks,",
+        "description": "  download from external drive, select documents from bixtrix24, and create files to upload",
+        "id": "as-a-user--i-should-be-able-to-send-messages-by-clicking-on-message-tab-under-activity-stream;user-should-be-able-to-click-on-upload-files-icon-to-upload-files-and-pictures-from-local-disks-",
         "after": [
           {
             "result": {
-              "duration": 5342000000,
+              "duration": 5218000000,
               "status": "passed"
             },
             "match": {
@@ -92,31 +92,37 @@
         "steps": [
           {
             "result": {
-              "duration": 2132000000,
+              "duration": 3166000000,
               "status": "passed"
             },
-            "line": 44,
-            "name": "User clicks on Comma icon",
+            "line": 10,
+            "name": "User clicks on \"Upload files\" icon",
             "match": {
-              "location": "com.bitrix.step_definitions.Activity_StepDefinition.userClicksOnCommaIcon()"
+              "arguments": [
+                {
+                  "val": "\"Upload files\"",
+                  "offset": 15
+                }
+              ],
+              "location": "com.bitrix.step_definitions.Activity_StepDefinition.userClicksOnIcon(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1200000000,
+              "duration": 4230000000,
               "status": "passed"
             },
-            "line": 45,
-            "name": "User passes following quote",
+            "line": 11,
+            "name": "User uploads following file:",
             "match": {
-              "location": "com.bitrix.step_definitions.Activity_StepDefinition.userPassesFollowingQuote(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+              "location": "com.bitrix.step_definitions.Activity_StepDefinition.userUploadsFollowingFile(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
             },
             "rows": [
               {
                 "cells": [
-                  "Quote",
-                  "Impossible is nothing"
+                  "File Path",
+                  "src/test/resources/testData/Sample.jpeg"
                 ]
               }
             ],
@@ -124,27 +130,27 @@
           },
           {
             "result": {
-              "duration": 2090000000,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: window was already closed\n  (Session info: chrome\u003d87.0.4280.67)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027EMREs-MacBook-Pro.local\u0027, ip: \u0027fe80:0:0:0:826:442:f7aa:290a%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.7\u0027, java.version: \u00271.8.0_231\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.67, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: /var/folders/fd/zhz3rg356b7...}, goog:chromeOptions: {debuggerAddress: localhost:59486}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 9052e08a4cf0a1bf6e8e5edc7721d604\n*** Element info: {Using\u003dxpath, value\u003d//div[@class\u003d\u0027feed-add-post-form-variants\u0027]//span[contains(text(),\u0027Message\u0027)]}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat com.bitrix.pages.ActivityStream.clickOnTab(ActivityStream.java:103)\n\tat com.bitrix.step_definitions.Activity_StepDefinition.userClicksOnTab(Activity_StepDefinition.java:52)\n\tat com.bitrix.step_definitions.Activity_StepDefinition.userClicksOnSelectDocumentFromBitrix(Activity_StepDefinition.java:76)\n\tat ✽.User clicks on select document from Bitrix(file:///Users/emre/Desktop/Bitrix2020/src/test/resources/features/UserStory1/AC1_Message.feature:13)\n",
+              "duration": 2033000000,
+              "status": "failed"
             },
-            "line": 47,
-            "name": "User clicks on send button to share",
+            "line": 13,
+            "name": "User clicks on select document from Bitrix",
             "match": {
-              "location": "com.bitrix.step_definitions.Activity_StepDefinition.userClicksOnSendButtonToShare()"
+              "location": "com.bitrix.step_definitions.Activity_StepDefinition.userClicksOnSelectDocumentFromBitrix()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 3041000000,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 48,
-            "name": "Quote should be displayed on the main stream",
+            "line": 14,
+            "name": "User downloads from external drive",
             "match": {
-              "location": "com.bitrix.step_definitions.Activity_StepDefinition.quoteShouldBeDisplayedOnTheMainStream()"
+              "location": "com.bitrix.step_definitions.Activity_StepDefinition.userDownloadsFromExternalDrive()"
             },
-            "keyword": "Then "
+            "keyword": "And "
           }
         ],
         "tags": [
@@ -152,7 +158,7 @@
             "name": "@activity"
           },
           {
-            "name": "@quote"
+            "name": "@login"
           },
           {
             "name": "@smoke"
