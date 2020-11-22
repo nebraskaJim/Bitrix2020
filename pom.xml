@@ -103,6 +103,7 @@
                             </includes>
                             <testFailureIgnore>false</testFailureIgnore>
                             <parallel>methods</parallel>
+                            <perCoreThreadCount>false</perCoreThreadCount>
                             <threadCount>2</threadCount>
                             <forkCount>2C</forkCount>
                         </configuration>
