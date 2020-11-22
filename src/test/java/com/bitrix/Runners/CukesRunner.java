@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue  = "com/bitrix/step_definitions",
         //dryRun = false,
-        tags="@quote"
+        tags="@contact"
 )
 @RunWith(Cucumber.class)
 public class CukesRunner {
