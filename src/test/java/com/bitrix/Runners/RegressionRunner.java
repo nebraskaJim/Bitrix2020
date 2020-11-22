@@ -13,8 +13,8 @@ import org.junit.runner.RunWith;
         },
         features = {"src/test/resources/features/UserStory1",
                     "src/test/resources/features/UserStory2",
-                    "src/test/resources/features/UserStory2",
-                    "src/test/resources/features/UserStory2"
+                    "src/test/resources/features/UserStory3",
+                    "src/test/resources/features/UserStory4"
         },
 
         glue  = "com/bitrix/step_definitions"
