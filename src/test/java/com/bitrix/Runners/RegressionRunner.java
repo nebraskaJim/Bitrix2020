@@ -15,9 +15,9 @@ import org.junit.runner.RunWith;
                     "src/test/resources/features/UserStory2"
         },
 
-        glue  = "com/bitrix/step_definitions",
+        glue  = "com/bitrix/step_definitions"
         //dryRun = false,
-        tags="@contact"
+        //tags="@contact"
 )
 @RunWith(Cucumber.class)
 public class RegressionRunner {
