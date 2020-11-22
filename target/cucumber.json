@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1103000000,
+              "duration": 8051000000,
               "status": "passed"
             },
             "line": 3,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 3482000000,
+              "duration": 8969000000,
               "status": "passed"
             },
             "line": 4,
@@ -41,7 +41,7 @@
           },
           {
             "result": {
-              "duration": 120000000,
+              "duration": 626000000,
               "status": "passed"
             },
             "line": 5,
@@ -60,11 +60,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-22T16:02:16.394Z",
+        "start_timestamp": "2020-11-22T16:43:25.458Z",
         "before": [
           {
             "result": {
-              "duration": 4359000000,
+              "duration": 7871000000,
               "status": "passed"
             },
             "match": {
@@ -79,7 +79,7 @@
         "after": [
           {
             "result": {
-              "duration": 5354000000,
+              "duration": 5339000000,
               "status": "passed"
             },
             "match": {
@@ -92,7 +92,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1040000000,
+              "duration": 1959000000,
               "status": "passed"
             },
             "line": 17,
@@ -104,7 +104,7 @@
           },
           {
             "result": {
-              "duration": 2151000000,
+              "duration": 2213000000,
               "status": "passed"
             },
             "line": 18,
@@ -122,7 +122,7 @@
           },
           {
             "result": {
-              "duration": 2142000000,
+              "duration": 2221000000,
               "status": "passed"
             },
             "line": 19,
@@ -134,7 +134,7 @@
           },
           {
             "result": {
-              "duration": 3440000000,
+              "duration": 3764000000,
               "status": "passed"
             },
             "line": 20,
@@ -166,7 +166,7 @@
           },
           {
             "result": {
-              "duration": 2139000000,
+              "duration": 2183000000,
               "status": "passed"
             },
             "line": 24,
@@ -178,7 +178,243 @@
           },
           {
             "result": {
-              "duration": 2985000000,
+              "duration": 3664000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User puts following email",
+            "match": {
+              "location": "com.bitrix.step_definitions.Activity_StepDefinition.userPutsFollowingEmail(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Email",
+                  "helpdesk25@cybertekschool.com"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2017000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "Number of receivers should be 5",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 30
+                }
+              ],
+              "location": "com.bitrix.step_definitions.Activity_StepDefinition.numberOfReceiversShouldBe(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@contact"
+          },
+          {
+            "name": "@activity"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "As a user, I should be able to send messages by clicking on Message tab under Activity Stream",
+    "description": "",
+    "id": "as-a-user--i-should-be-able-to-send-messages-by-clicking-on-message-tab-under-activity-stream",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/UserStory1/AC1_Message.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7594000000,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User is on the landing page",
+            "match": {
+              "location": "com.bitrix.step_definitions.Activity_StepDefinition.user_is_on_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8974000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User logs in as \"hr\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"hr\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.bitrix.step_definitions.Activity_StepDefinition.userLogsInAs(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 636000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User clicks on \"Message\" tab",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Message\"",
+                  "offset": 15
+                }
+              ],
+              "location": "com.bitrix.step_definitions.Activity_StepDefinition.userClicksOnTab(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-22T16:43:25.458Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8342000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.bitrix.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "User should be able to add users from selecting contact from E-mail user, Employees and Departments and Recent contact lists.",
+        "description": "",
+        "id": "as-a-user--i-should-be-able-to-send-messages-by-clicking-on-message-tab-under-activity-stream;user-should-be-able-to-add-users-from-selecting-contact-from-e-mail-user--employees-and-departments-and-recent-contact-lists.",
+        "after": [
+          {
+            "result": {
+              "duration": 5153000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.bitrix.step_definitions.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1850000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User clicks on Add More button",
+            "match": {
+              "location": "com.bitrix.step_definitions.Activity_StepDefinition.userClicksOnAddMoreButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2231000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User clicks on \"Recent\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Recent\"",
+                  "offset": 15
+                }
+              ],
+              "location": "com.bitrix.step_definitions.Activity_StepDefinition.userClicksOn(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2175000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User clicks on Employees and departments",
+            "match": {
+              "location": "com.bitrix.step_definitions.Activity_StepDefinition.userClicksOnEmployeesAndDepartments()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3517000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User chooses following emails",
+            "match": {
+              "location": "com.bitrix.step_definitions.Activity_StepDefinition.userChoosesFollowingEmails(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "User1",
+                  "helpdesk22@cybertekschool.com"
+                ]
+              },
+              {
+                "cells": [
+                  "User2",
+                  "helpdesk23@cybertekschool.com"
+                ]
+              },
+              {
+                "cells": [
+                  "User3",
+                  "helpdesk24@cybertekschool.com"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2119000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User click on E-mail users",
+            "match": {
+              "location": "com.bitrix.step_definitions.Activity_StepDefinition.userClickOnEMailUsers()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3793000000,
               "status": "passed"
             },
             "line": 25,
@@ -232,7 +468,479 @@
     "description": "",
     "id": "as-a-user--i-should-be-able-to-send-messages-by-clicking-on-message-tab-under-activity-stream",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/UserStory1/AC1_Message.feature",
+    "uri": "file:src/test/resources/features/UserStory1/AC1_Message2.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8034000000,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User is on the landing page",
+            "match": {
+              "location": "com.bitrix.step_definitions.Activity_StepDefinition.user_is_on_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8859000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User logs in as \"hr\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"hr\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.bitrix.step_definitions.Activity_StepDefinition.userLogsInAs(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 674000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User clicks on \"Message\" tab",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Message\"",
+                  "offset": 15
+                }
+              ],
+              "location": "com.bitrix.step_definitions.Activity_StepDefinition.userClicksOnTab(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-22T16:43:25.458Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7932000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.bitrix.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "User should be able to add users from selecting contact from E-mail user, Employees and Departments and Recent contact lists.",
+        "description": "",
+        "id": "as-a-user--i-should-be-able-to-send-messages-by-clicking-on-message-tab-under-activity-stream;user-should-be-able-to-add-users-from-selecting-contact-from-e-mail-user--employees-and-departments-and-recent-contact-lists.",
+        "after": [
+          {
+            "result": {
+              "duration": 5366000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.bitrix.step_definitions.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1965000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User clicks on Add More button",
+            "match": {
+              "location": "com.bitrix.step_definitions.Activity_StepDefinition.userClicksOnAddMoreButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2208000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User clicks on \"Recent\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Recent\"",
+                  "offset": 15
+                }
+              ],
+              "location": "com.bitrix.step_definitions.Activity_StepDefinition.userClicksOn(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2203000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User clicks on Employees and departments",
+            "match": {
+              "location": "com.bitrix.step_definitions.Activity_StepDefinition.userClicksOnEmployeesAndDepartments()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3837000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User chooses following emails",
+            "match": {
+              "location": "com.bitrix.step_definitions.Activity_StepDefinition.userChoosesFollowingEmails(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "User1",
+                  "helpdesk22@cybertekschool.com"
+                ]
+              },
+              {
+                "cells": [
+                  "User2",
+                  "helpdesk23@cybertekschool.com"
+                ]
+              },
+              {
+                "cells": [
+                  "User3",
+                  "helpdesk24@cybertekschool.com"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2172000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User click on E-mail users",
+            "match": {
+              "location": "com.bitrix.step_definitions.Activity_StepDefinition.userClickOnEMailUsers()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3676000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User puts following email",
+            "match": {
+              "location": "com.bitrix.step_definitions.Activity_StepDefinition.userPutsFollowingEmail(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Email",
+                  "helpdesk25@cybertekschool.com"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2019000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "Number of receivers should be 5",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 30
+                }
+              ],
+              "location": "com.bitrix.step_definitions.Activity_StepDefinition.numberOfReceiversShouldBe(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@contact"
+          },
+          {
+            "name": "@activity"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "As a user, I should be able to send messages by clicking on Message tab under Activity Stream",
+    "description": "",
+    "id": "as-a-user--i-should-be-able-to-send-messages-by-clicking-on-message-tab-under-activity-stream",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/UserStory1/AC1_Message3.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7986000000,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User is on the landing page",
+            "match": {
+              "location": "com.bitrix.step_definitions.Activity_StepDefinition.user_is_on_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8285000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User logs in as \"hr\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"hr\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.bitrix.step_definitions.Activity_StepDefinition.userLogsInAs(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 737000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User clicks on \"Message\" tab",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Message\"",
+                  "offset": 15
+                }
+              ],
+              "location": "com.bitrix.step_definitions.Activity_StepDefinition.userClicksOnTab(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-22T16:43:25.458Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8133000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.bitrix.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "User should be able to add users from selecting contact from E-mail user, Employees and Departments and Recent contact lists.",
+        "description": "",
+        "id": "as-a-user--i-should-be-able-to-send-messages-by-clicking-on-message-tab-under-activity-stream;user-should-be-able-to-add-users-from-selecting-contact-from-e-mail-user--employees-and-departments-and-recent-contact-lists.",
+        "after": [
+          {
+            "result": {
+              "duration": 5241000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.bitrix.step_definitions.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1740000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User clicks on Add More button",
+            "match": {
+              "location": "com.bitrix.step_definitions.Activity_StepDefinition.userClicksOnAddMoreButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2143000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User clicks on \"Recent\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Recent\"",
+                  "offset": 15
+                }
+              ],
+              "location": "com.bitrix.step_definitions.Activity_StepDefinition.userClicksOn(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2132000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User clicks on Employees and departments",
+            "match": {
+              "location": "com.bitrix.step_definitions.Activity_StepDefinition.userClicksOnEmployeesAndDepartments()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3612000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User chooses following emails",
+            "match": {
+              "location": "com.bitrix.step_definitions.Activity_StepDefinition.userChoosesFollowingEmails(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "User1",
+                  "helpdesk22@cybertekschool.com"
+                ]
+              },
+              {
+                "cells": [
+                  "User2",
+                  "helpdesk23@cybertekschool.com"
+                ]
+              },
+              {
+                "cells": [
+                  "User3",
+                  "helpdesk24@cybertekschool.com"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2132000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User click on E-mail users",
+            "match": {
+              "location": "com.bitrix.step_definitions.Activity_StepDefinition.userClickOnEMailUsers()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3012000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User puts following email",
+            "match": {
+              "location": "com.bitrix.step_definitions.Activity_StepDefinition.userPutsFollowingEmail(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Email",
+                  "helpdesk25@cybertekschool.com"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2038000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "Number of receivers should be 5",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 30
+                }
+              ],
+              "location": "com.bitrix.step_definitions.Activity_StepDefinition.numberOfReceiversShouldBe(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@contact"
+          },
+          {
+            "name": "@activity"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "As a user, I should be able to send messages by clicking on Message tab under Activity Stream",
+    "description": "",
+    "id": "as-a-user--i-should-be-able-to-send-messages-by-clicking-on-message-tab-under-activity-stream",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/UserStory1/AC1_Message4.feature",
     "tags": []
   }
 ]
