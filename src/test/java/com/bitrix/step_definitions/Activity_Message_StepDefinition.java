@@ -3,22 +3,13 @@ package com.bitrix.step_definitions;
 import com.bitrix.Utilities.BrowserUtils;
 import com.bitrix.Utilities.ConfigurationReader;
 import com.bitrix.Utilities.Driver;
-import com.bitrix.pages.ActivityStream;
+import com.bitrix.pages.ActivityStream.MessageTab;
 import com.bitrix.pages.LoginPage;
-import io.cucumber.java.bs.A;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Assert;
-import org.junit.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Wait;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -27,10 +18,10 @@ import java.util.List;
 import java.util.Map;
 
 
-public class Activity_StepDefinition {
+public class Activity_Message_StepDefinition {
 
     LoginPage loginPage = new LoginPage();
-    ActivityStream activityStream = new ActivityStream();
+    MessageTab activityStream = new MessageTab();
     @Given("User is on the landing page")
     public void user_is_on_the_landing_page() {
 
@@ -280,4 +271,7 @@ public class Activity_StepDefinition {
     public void errorMessageShouldBeDisplayed() {
         activityStream.errorPopupDisplayed();
     }
+
+
+
 }

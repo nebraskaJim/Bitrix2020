@@ -1,20 +1,24 @@
-package com.bitrix.pages;
+package com.bitrix.pages.ActivityStream;
 
 import com.bitrix.Utilities.BrowserUtils;
 import com.bitrix.Utilities.Driver;
+import com.bitrix.pages.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class ActivityStream extends BasePage{
+public class MessageTab extends BasePage {
+    Wait wait = new WebDriverWait(Driver.getDriver(),10);
 
     JavascriptExecutor javascriptExecutor = (JavascriptExecutor)Driver.getDriver();
 
@@ -98,20 +102,7 @@ public class ActivityStream extends BasePage{
 
 
 
-    public void clickOnTab(String tabName){
-        tabName = tabName.substring(0,1).toUpperCase()+tabName.substring(1);
-        WebElement tabs = Driver.getDriver().findElement(By.xpath("//div[@class='feed-add-post-form-variants']//span[contains(text(),'"+tabName+"')]"));
-        wait.until(ExpectedConditions.visibilityOf(tabs));
-        tabs.click();
-    }
-    ////span[@title='Name: Welcome Scan.jpg']
-    public void clickOnIcon(String iconName){
 
-        WebElement icons = Driver.getDriver().findElement(By.xpath("(//span[@title='"+iconName+"'])[1]"));
-        wait.until(ExpectedConditions.visibilityOf(icons));
-        icons.click();
-
-    }
 
     public void clickRecordVideoIcon(){
         recordVideoIcon.click();

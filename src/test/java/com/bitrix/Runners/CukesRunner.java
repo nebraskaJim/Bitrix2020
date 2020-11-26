@@ -11,10 +11,11 @@ import org.junit.runner.RunWith;
                 "json:target/cucumber.json",
                 "rerun:target/rerun.txt"
         },
-        features = "src/test/resources/features",
+        features = "src/test/resources/features/UserStory1",
         glue  = "com/bitrix/step_definitions",
-        //dryRun = false,
-        tags="@contact"
+        dryRun = false,
+        tags="@checklist"
+        //span[@title = 'Visual editor' and @id='lhe_button_editor_task-form-lifefeed_task_form']
 )
 @RunWith(Cucumber.class)
 public class CukesRunner {

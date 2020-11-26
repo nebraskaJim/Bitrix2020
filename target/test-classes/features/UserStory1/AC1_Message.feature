@@ -3,7 +3,7 @@ Feature: As a user, I should be able to send messages by clicking on Message tab
     Given User is on the landing page
     When User logs in as "hr"
     And User clicks on "Message" tab
-  @activity @login @smoke
+  @activity @login @smoke @messageTab @uploadMessage
   Scenario:User should be able to click on upload files icon to upload files and pictures from local disks,
   download from external drive, select documents from bixtrix24, and create files to upload
 
@@ -12,7 +12,7 @@ Feature: As a user, I should be able to send messages by clicking on Message tab
     |File Path|src/test/resources/testData/Sample.jpeg|
     And User clicks on select document from Bitrix
     And User downloads from external drive
-  @contact @activity @smoke
+  @contact @activity @smoke @messageTab
   Scenario:User should be able to add users from selecting contact from E-mail user, Employees and Departments and Recent contact lists.
     When User clicks on Add More button
     And User clicks on "Recent"
@@ -25,28 +25,28 @@ Feature: As a user, I should be able to send messages by clicking on Message tab
     And User puts following email
     |Email|helpdesk25@cybertekschool.com|
     Then Number of receivers should be 5
-  @activity @link @smoke
+  @activity @link @smoke @messageTab
   Scenario: User should be able to attach link by clicking on the link icon
     When User clicks on link icon
     And User types following and clicks on save button
     |URL|https://www.google.com/|
     And User clicks on send button to share
     Then URL should be displayed on the main stream
-  @activity @video @smoke
+  @activity @video @smoke @messageTab
   Scenario: User should be able to insert videos by clicking on the video icon and entering the video URL
     When User clicks on Insert video icon
     And User passes following URL into video source and clicks save button
     |URL|https://www.youtube.com/watch?v=2ZUWGoEbbSs|
     And User click on send button
     Then Video should be displayed on the main stream
-  @activity @quote @smoke
+  @activity @quote @smoke @messageTab
   Scenario: User should be able to create a quote by clicking on the Comma icon
     When User clicks on Comma icon
     And User passes following quote
     |Quote|Impossible is nothing|
     And User clicks on send button to share
     Then Quote should be displayed on the main stream
-  @activity @mention @smoke
+  @activity @mention @smoke @messageTab
   Scenario: User should be able to add mention by clicking on the Add mention icon and select contacts from the lists provided in dropdown
     When User clicks on Add mention icon
     And User clicks on Employees and departments
@@ -54,15 +54,15 @@ Feature: As a user, I should be able to send messages by clicking on Message tab
     |Email|helpdesk23@cybertekschool.com|
     And User clicks on send button to share
     Then email should be displayed on the main stream
-  @activity @editor @smoke @mention
+  @activity @editorMessage @smoke @mention @messageTab
   Scenario: User should be able to click on Visual Editor and see the editor text-bar displays on top of the message box.
     When User clicks on Visual Editor icon
     Then Editor text-bar should be displayed on top of message box
-  @activity @topic @smoke
+  @activity @topic @smoke @messageTab
   Scenario: User should be able to click on the Topic icon to see the Message Topic text box displays on top of the message box.
     When User clicks on topic icon
     Then Topic text box should be displayed on top of message box
-  @activity @recordVideo @smoke
+  @activity @recordVideo @smoke @messageTab
   Scenario: User should be able to click on "Record Video" tab to record a video and attach it with the message
     When User clicks on Record Video icon
     And User allows device to accept to camera and mic
