@@ -1,7 +1,10 @@
 package com.bitrix.pages.ActivityStream;
 
 import com.bitrix.Utilities.BrowserUtils;
+import com.bitrix.Utilities.Driver;
 import com.bitrix.pages.BasePage;
+import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -39,6 +42,16 @@ public class TaskTab extends BasePage {
 
     @FindBy(xpath = "//span[@class='js-id-checklist-is-form-close tasks-btn-delete task-field-title-del']")
     private WebElement xMarkButtonInCheckList;
+
+    @FindBy(xpath = "(//a[contains(text(),'Add more')])[2]")
+    private  WebElement addMoreButton;
+
+    @FindBy(xpath = "(//a[contains(text(),'Add')])[9]")
+    private WebElement plusAddButtonUnderParticipants;
+
+    @FindBy(xpath = "(//a[contains(text(),'Add')])[11]")
+    private WebElement plusAddButtonObservers;
+
 
 
 
@@ -102,6 +115,33 @@ public class TaskTab extends BasePage {
         wait.until(ExpectedConditions.elementToBeClickable(xMarkButtonInCheckList));
         xMarkButtonInCheckList.click();
 
+    }
+
+    public void chooseAssignmentCategories(String category){
+        BrowserUtils.waitForSecond(1);
+        WebElement categories = Driver.getDriver().findElement(By.xpath("(//span[.='"+category+"'])[1]"));
+        wait.until(ExpectedConditions.elementToBeClickable(categories));
+        categories.click();
+
+
+    }
+
+    public void addMoreButtonUnderTaskTab(){
+        wait.until(ExpectedConditions.elementToBeClickable(addMoreButton));
+        Assert.assertTrue(addMoreButton.isDisplayed());
+
+    }
+
+    public void clickPlusAddButtonParticipants(){
+        BrowserUtils.waitForSecond(1);
+        wait.until(ExpectedConditions.elementToBeClickable(plusAddButtonUnderParticipants));
+        plusAddButtonUnderParticipants.click();
+    }
+
+    public void clickPlusAddButtonObservers(){
+        BrowserUtils.waitForSecond(1);
+        wait.until(ExpectedConditions.elementToBeClickable(plusAddButtonObservers));
+        plusAddButtonObservers.click();
     }
 
 

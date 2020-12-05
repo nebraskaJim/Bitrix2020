@@ -7,7 +7,10 @@ import com.bitrix.pages.ActivityStream.TaskTab;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -55,6 +58,7 @@ public class Activity_Task_StepDefinition {
         messageTab.setSelectDocumentFromBitrix24();
 
 
+
     }
 
 
@@ -89,5 +93,33 @@ public class Activity_Task_StepDefinition {
     @And("User deletes checklist item by clicking on x mark.")
     public void userDeletesChecklistItemByClickingOnXMark() {
         taskTab.deleteThingsToDoInbox();
+    }
+
+    @And("User clicks on Add More button under TASK tab")
+    public void userClicksOnAddMoreButtonUnderTASKTab() {
+        taskTab.addMoreButtonUnderTaskTab();
+    }
+
+    @And("User clicks on Created by button")
+    public void userClicksOnCreatedByButton() {
+        BrowserUtils.waitForSecond(2);
+        taskTab.chooseAssignmentCategories("Created by");
+    }
+
+    @And("User clicks on Participants button")
+    public void userClicksOnParticipantsButton() {
+        taskTab.chooseAssignmentCategories("Participants");
+    }
+
+
+    @And("User clicks on +Add button in participants")
+    public void userClicksOnAddButtonInParticipants() {
+
+        taskTab.clickPlusAddButtonParticipants();
+    }
+
+    @And("User clicks on +Add button in observers")
+    public void userClicksOnAddButtonInObservers() {
+        taskTab.clickPlusAddButtonObservers();
     }
 }

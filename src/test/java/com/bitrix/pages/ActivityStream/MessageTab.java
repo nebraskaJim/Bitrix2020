@@ -176,7 +176,7 @@ public class MessageTab extends BasePage {
     public void chooseReceiversFromEmpAndDep(String email){
         BrowserUtils.waitForSecond(1);
         WebElement receiverEmail =
-                Driver.getDriver().findElement(By.xpath("//div[contains(text(),'"+email+"') and @class='bx-finder-company-department-employee-name']"));
+        Driver.getDriver().findElement(By.xpath("//div[contains(text(),'"+email+"') and @class='bx-finder-company-department-employee-name']"));
         wait.until(ExpectedConditions.elementToBeClickable(receiverEmail));
         receiverEmail.click();
 

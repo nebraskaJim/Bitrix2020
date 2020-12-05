@@ -1,3 +1,4 @@
+@reg
 Feature: As a user, I should be able to send messages by clicking on Message tab under Activity Stream
   Background:
     Given User is on the landing page
