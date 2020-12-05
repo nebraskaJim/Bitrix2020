@@ -104,7 +104,7 @@
                             <testFailureIgnore>false</testFailureIgnore>
                             <parallel>methods</parallel>
                             <perCoreThreadCount>false</perCoreThreadCount>
-                            <threadCount>1</threadCount>
+                            <threadCount>4</threadCount>
                             <forkCount>2C</forkCount>
                         </configuration>
                     </plugin>
