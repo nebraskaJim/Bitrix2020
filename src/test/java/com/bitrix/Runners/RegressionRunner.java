@@ -11,10 +11,8 @@ import org.junit.runner.RunWith;
                 "json:target/cucumber.json",
                 "rerun:target/rerun.txt"
         },
-        features = {"src/test/resources/features/UserStory1",
-                    "src/test/resources/features/UserStory2",
-                    "src/test/resources/features/UserStory3",
-                    "src/test/resources/features/UserStory4"
+        features = {"src/test/resources/features/UserStory1"
+
         },
 
         glue  = "com/bitrix/step_definitions"

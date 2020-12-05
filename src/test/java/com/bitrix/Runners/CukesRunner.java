@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features/UserStory1",
         glue  = "com/bitrix/step_definitions",
         dryRun = false,
-        tags="@link"
+        tags="@more"
         //span[@title = 'Visual editor' and @id='lhe_button_editor_task-form-lifefeed_task_form']
 )
 @RunWith(Cucumber.class)
