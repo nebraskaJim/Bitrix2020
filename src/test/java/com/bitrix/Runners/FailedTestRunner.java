@@ -10,4 +10,5 @@ import org.junit.runner.RunWith;
         glue="com/bitrix/step_definitions"
 )
 public class FailedTestRunner {
+
 }

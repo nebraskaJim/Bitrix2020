@@ -52,7 +52,7 @@
                     <runOrder>Alphabetical</runOrder>
                     <includes>
                         <include>**/*CukesRunner*.java</include>
-<!--                        <include>**/*FailedTestRunner*.java</include>-->
+                        <include>**/*FailedTestRunner*.java</include>
                     </includes>
                     <testFailureIgnore>false</testFailureIgnore>
                     <parallel>methods</parallel>
@@ -104,6 +104,30 @@
                             <testFailureIgnore>false</testFailureIgnore>
                             <parallel>methods</parallel>
                             <perCoreThreadCount>false</perCoreThreadCount>
+                            <threadCount>1</threadCount>
+                            <forkCount>2C</forkCount>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>Failed</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>3.0.0-M5</version>
+                        <configuration>
+                            <runOrder>Alphabetical</runOrder>
+                            <includes>
+                                <include>**/RegressionRunner.java</include>
+                                <!--                        <include>**/*FailedTestRunner*.java</include>-->
+                            </includes>
+                            <testFailureIgnore>false</testFailureIgnore>
+                            <parallel>methods</parallel>
+                            <perCoreThreadCount>false</perCoreThreadCount>
                             <threadCount>4</threadCount>
                             <forkCount>2C</forkCount>
                         </configuration>
@@ -112,6 +136,4 @@
             </build>
         </profile>
     </profiles>
-
-
 </project>
