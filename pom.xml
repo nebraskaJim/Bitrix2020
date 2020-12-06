@@ -58,7 +58,7 @@
 
                     <testFailureIgnore>false</testFailureIgnore>
                     <parallel>methods</parallel>
-                    <rerunFailingTestsCount>10</rerunFailingTestsCount>
+                    <rerunFailingTestsCount>3</rerunFailingTestsCount>
 
                     <threadCount>2</threadCount>
 

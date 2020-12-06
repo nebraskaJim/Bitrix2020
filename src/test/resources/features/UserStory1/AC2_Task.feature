@@ -9,6 +9,7 @@ Feature: As a user, I should be able to assign tasks by clicking on Task tab und
   Scenario: User should be able to click on "High Priority" checkbox to set the current task to a top priority task
     When User clicks on High Priority checkbox
     Then Flame image should be lighted up
+
   @regression @taskTab @editorTask
   Scenario: User should be able to click on Visual Editor and see the editor text-bar displays on top of the message box
     When User clicks on Visual Editor icon
