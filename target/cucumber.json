@@ -1,0 +1,308 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 907000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on the landing page",
+            "match": {
+              "location": "com.bitrix.step_definitions.Activity_Message_StepDefinition.user_is_on_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2946000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User logs in as \"hr\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"hr\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.bitrix.step_definitions.Activity_Message_StepDefinition.userLogsInAs(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 244000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User clicks on Task tab",
+            "match": {
+              "location": "com.bitrix.step_definitions.Activity_Task_StepDefinition.user_clicks_on_task_tab()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-06T20:10:26.584Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2236000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.bitrix.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 36,
+        "name": ". User can assign the tasks to employees by clicking on Add More and selecting contact from E-mail user,",
+        "description": "  Employees and Departments and Recent contact lists.\n  Employees can be added in different assignment categories: Created By, Participants and Observer.",
+        "id": "as-a-user--i-should-be-able-to-assign-tasks-by-clicking-on-task-tab-under-active-stream.;.-user-can-assign-the-tasks-to-employees-by-clicking-on-add-more-and-selecting-contact-from-e-mail-user-",
+        "after": [
+          {
+            "result": {
+              "duration": 5163000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.bitrix.step_definitions.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1663000000,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "User types Task subject",
+            "match": {
+              "location": "com.bitrix.step_definitions.Activity_Task_StepDefinition.userTypesTaskSubject()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 83000000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "User clicks on Add More button under TASK tab",
+            "match": {
+              "location": "com.bitrix.step_definitions.Activity_Task_StepDefinition.userClicksOnAddMoreButtonUnderTASKTab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3192000000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "User clicks on Created by button",
+            "match": {
+              "location": "com.bitrix.step_definitions.Activity_Task_StepDefinition.userClicksOnCreatedByButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1123000000,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "User clicks on Participants button",
+            "match": {
+              "location": "com.bitrix.step_definitions.Activity_Task_StepDefinition.userClicksOnParticipantsButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1184000000,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "User clicks on +Add button in participants",
+            "match": {
+              "location": "com.bitrix.step_definitions.Activity_Task_StepDefinition.userClicksOnAddButtonInParticipants()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2117000000,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "User clicks on \"Recent\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Recent\"",
+                  "offset": 15
+                }
+              ],
+              "location": "com.bitrix.step_definitions.Activity_Message_StepDefinition.userClicksOn(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on MAC (1e9b94e4c4e2646854f2d0598dde7a3e)] -\u003e xpath: (//a[contains(text(),\u0027Add\u0027)])[11]] (tried for 10 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027EMREs-MacBook-Pro.local\u0027, ip: \u0027fe80:0:0:0:c80:c5f9:aca9:5e70%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u00271.8.0_231\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: /var/folders/fd/zhz3rg356b7...}, goog:chromeOptions: {debuggerAddress: localhost:52748}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 1e9b94e4c4e2646854f2d0598dde7a3e\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\n\tat com.bitrix.pages.ActivityStream.TaskTab.clickPlusAddButtonObservers(TaskTab.java:143)\n\tat com.bitrix.step_definitions.Activity_Task_StepDefinition.userClicksOnAddButtonInObservers(Activity_Task_StepDefinition.java:123)\n\tat ✽.User clicks on +Add button in observers(file:///Users/emre/IdeaProjects/Bitrix2020/src/test/resources/features/UserStory1/AC2_Task.feature:45)\n",
+              "duration": 11096000000,
+              "status": "failed"
+            },
+            "line": 45,
+            "name": "User clicks on +Add button in observers",
+            "match": {
+              "location": "com.bitrix.step_definitions.Activity_Task_StepDefinition.userClicksOnAddButtonInObservers()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 46,
+            "name": "User clicks on Employees and departments",
+            "match": {
+              "location": "com.bitrix.step_definitions.Activity_Message_StepDefinition.userClicksOnEmployeesAndDepartments()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 47,
+            "name": "User chooses following emails",
+            "match": {
+              "location": "com.bitrix.step_definitions.Activity_Message_StepDefinition.userChoosesFollowingEmails(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "User1",
+                  "helpdesk22@cybertekschool.com"
+                ]
+              },
+              {
+                "cells": [
+                  "User2",
+                  "helpdesk23@cybertekschool.com"
+                ]
+              },
+              {
+                "cells": [
+                  "User3",
+                  "helpdesk24@cybertekschool.com"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 51,
+            "name": "User click on E-mail users",
+            "match": {
+              "location": "com.bitrix.step_definitions.Activity_Message_StepDefinition.userClickOnEMailUsers()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 52,
+            "name": "User puts following email",
+            "match": {
+              "location": "com.bitrix.step_definitions.Activity_Message_StepDefinition.userPutsFollowingEmail(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Email",
+                  "helpdesk25@cybertekschool.com"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 54,
+            "name": "User clicks on send button to share",
+            "match": {
+              "location": "com.bitrix.step_definitions.Activity_Message_StepDefinition.userClicksOnSendButtonToShare()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 55,
+            "name": "\"Task has been created\" message should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Task has been created\"",
+                  "offset": 0
+                }
+              ],
+              "location": "com.bitrix.step_definitions.Activity_Task_StepDefinition.messageShouldBeDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@reg"
+          },
+          {
+            "name": "@long"
+          },
+          {
+            "name": "@task"
+          }
+        ]
+      }
+    ],
+    "name": "As a user, I should be able to assign tasks by clicking on Task tab under Active Stream.",
+    "description": "",
+    "id": "as-a-user--i-should-be-able-to-assign-tasks-by-clicking-on-task-tab-under-active-stream.",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/UserStory1/AC2_Task.feature",
+    "tags": [
+      {
+        "name": "@reg",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

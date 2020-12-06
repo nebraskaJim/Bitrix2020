@@ -49,22 +49,29 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M5</version>
                 <configuration>
+
                     <runOrder>Alphabetical</runOrder>
                     <includes>
                         <include>**/*CukesRunner*.java</include>
-                        <include>**/*FailedTestRunner*.java</include>
+<!--                        <include>**/*FailedTestRunner*.java</include>-->
                     </includes>
+
                     <testFailureIgnore>false</testFailureIgnore>
                     <parallel>methods</parallel>
+                    <rerunFailingTestsCount>10</rerunFailingTestsCount>
+
                     <threadCount>2</threadCount>
+
                     <forkCount>2C</forkCount>
                 </configuration>
             </plugin>
             <plugin>
+
                 <groupId>net.masterthought</groupId>
                 <artifactId>maven-cucumber-reporting</artifactId>
                 <version>5.3.0</version>
                 <executions>
+
                     <execution>
                         <id>execution</id>
                         <phase>verify</phase>
@@ -72,8 +79,11 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
+
                             <projectName>Cucumber HTML Reports</projectName>
-                            <outputDirectory>${project.build.directory}</outputDirectory>
+
+                            <outputDirectory>${project.build.directory}/target</outputDirectory>
+
                             <inputDirectory>${project.build.directory}</inputDirectory>
                             <jsonFiles>
                                 <param>**/cucumber*.json</param>
@@ -122,7 +132,7 @@
                         <configuration>
                             <runOrder>Alphabetical</runOrder>
                             <includes>
-                                <include>**/RegressionRunner.java</include>
+                                <include>**/FailedTestRunner.java</include>
                                 <!--                        <include>**/*FailedTestRunner*.java</include>-->
                             </includes>
                             <testFailureIgnore>false</testFailureIgnore>

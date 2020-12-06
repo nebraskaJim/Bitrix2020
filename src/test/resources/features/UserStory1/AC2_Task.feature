@@ -5,7 +5,7 @@ Feature: As a user, I should be able to assign tasks by clicking on Task tab und
     Given User is on the landing page
     When User logs in as "hr"
     And User clicks on Task tab
-  @regression @taskTab @highPriority
+  @regression @taskTab @highPriority @task
   Scenario: User should be able to click on "High Priority" checkbox to set the current task to a top priority task
     When User clicks on High Priority checkbox
     Then Flame image should be lighted up
@@ -32,7 +32,7 @@ Feature: As a user, I should be able to assign tasks by clicking on Task tab und
     And User clicks on send button to share
     Then "Task has been created" message should be displayed
 
-    @long
+    @long @task
   Scenario: . User can assign the tasks to employees by clicking on Add More and selecting contact from E-mail user,
   Employees and Departments and Recent contact lists.
   Employees can be added in different assignment categories: Created By, Participants and Observer.

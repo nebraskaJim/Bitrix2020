@@ -1,5 +1,6 @@
 com/bitrix/step_definitions/Hooks.class
 com/bitrix/Runners/RegressionRunner.class
+com/bitrix/step_definitions/Activity_More_StepDefinition.class
 com/bitrix/Utilities/BrowserUtils.class
 com/bitrix/pages/ActivityStream/MessageTab.class
 com/bitrix/Runners/FailedTestRunner.class
@@ -12,3 +13,4 @@ com/bitrix/pages/BasePage.class
 com/bitrix/Utilities/Driver.class
 com/bitrix/step_definitions/Activity_Task_StepDefinition.class
 com/bitrix/step_definitions/DriveWealth.class
+com/bitrix/pages/ActivityStream/MoreTab.class
