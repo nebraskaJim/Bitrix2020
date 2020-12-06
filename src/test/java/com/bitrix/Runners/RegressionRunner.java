@@ -11,7 +11,9 @@ import org.junit.runner.RunWith;
                 "json:target/cucumber.json",
                 "rerun:target/rerun.txt"
         },
-        features = {"src/test/resources/features/UserStory1"
+        features = {"src/test/resources/features/UserStory1",
+                "src/test/resources/features/UserStory1",
+                "src/test/resources/features/UserStory1"
 
         },
 
